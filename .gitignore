@@ -1,0 +1,5 @@
+docs/_build
+dist
+sphinx_ai.egg-info
+sphinx-ai/__pycache__
+venv
