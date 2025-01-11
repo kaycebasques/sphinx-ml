@@ -2,7 +2,7 @@
 
 ## Commit labels
 
-* feature
-* bug
-* refactor
-* doc
+* [f] - new feature(s)
+* [b] - bug fix(es)
+* [r] - refactor(s)
+* [d] - documentation
