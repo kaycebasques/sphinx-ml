@@ -18,7 +18,7 @@ def compute_hash(text):
 
 
 def get_embeddings_dir_path(app):
-    out_dir = app.config.sphinx_ai_out_dir
+    out_dir = app.config.sphinx_ml_out_dir
     return f'{out_dir}/embeddings'
 
 
@@ -85,16 +85,16 @@ def update_embeddings(app, doc_tree, doc_name):
 
 def setup_api_keys(app):
     # Gemini
-    app.add_config_value('sphinx_ai_gemini_api_key', None, 'html')
-    if app.config.sphinx_ai_gemini_api_key is not None:
-        gemini.configure(api_key=app.config.sphinx_ai_gemini_api_key)
+    app.add_config_value('sphinx_ml_gemini_api_key', None, 'html')
+    if app.config.sphinx_ml_gemini_api_key is not None:
+        gemini.configure(api_key=app.config.sphinx_ml_gemini_api_key)
 
 
 def setup_output_directories(app):
     # Top-level output directory
-    default_out_dir = f'{app.confdir}/_sphinx-ai'
-    app.add_config_value('sphinx_ai_out_dir', default_out_dir, 'html')
-    out_dir = app.config.sphinx_ai_out_dir
+    default_out_dir = f'{app.confdir}/_sphinx-ml'
+    app.add_config_value('sphinx_ml_out_dir', default_out_dir, 'html')
+    out_dir = app.config.sphinx_ml_out_dir
     if not os.path.exists(out_dir):
         os.makedirs(out_dir)
     # TODO: Test that directory is created at default location.

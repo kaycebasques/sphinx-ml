@@ -4,7 +4,7 @@ import setuptools
 
 
 cwd = os.path.abspath(os.path.dirname(__file__))
-with open(f'{cwd}/sphinx-ai/version.json', 'r') as f:
+with open(f'{cwd}/sphinx-ml/version.json', 'r') as f:
     version = json.load(f)['version']
 
 
@@ -14,11 +14,11 @@ def install_requires():
 
 
 setuptools.setup(
-    name='sphinx-ai',
+    name='sphinx-ml',
     version=version,
-    packages=['sphinx-ai'],
+    packages=['sphinx-ml'],
     package_data={
-        'sphinx-ai': ['version.json']
+        'sphinx-ml': ['version.json']
     },
     install_requires=install_requires(),
     classifiers=[],

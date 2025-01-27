@@ -1,6 +1,6 @@
 build
 docs/_build
 dist
-sphinx_ai.egg-info
-sphinx-ai/__pycache__
+sphinx_ml.egg-info
+sphinx-ml/__pycache__
 venv

@@ -1,4 +1,4 @@
-# sphinx-ai
+# sphinx-ml
 
 ## Commit labels
 
